@@ -11,22 +11,21 @@
 html {
     width: 100%;
     height: 100%;
+    background: url(../images/lionback.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 body{
     font-family: 'Exo', sans-serif;
-    background-image: url(../images/lionback.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    -moz-background-clip: padding-box;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    
+    overflow: auto;
 }
 
 .mainsection {
-    overflow: hidden;
+    overflow: auto;
     
 }
 
@@ -87,9 +86,45 @@ body{
     padding: 20px;
     text-align: center;
     top: 75%;
-    opacity: .7;
+    opacity: .8;
 }
 
+.liontitle h1{
+    display: inline-block;
+    font-size: 80px;
+    line-height: 0.9;
+    padding: 20px;
+    font-family: 'Syncopate', sans-serif;
+    text-transform: uppercase;
+    background: radial-gradient(
+      circle farthest-corner at center center,
+      white,
+      #111
+    ) no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    
+}
+
+.artblock {
+    position: absolute;
+    background: black;
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin: 0 auto;
+    opacity: .4;
+}
+
+article {
+    width: 100%;
+    top: 38%;
+    position: absolute;
+    margin-bottom: 70px;
+    
+}
 
 h1, p {
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -103,44 +138,26 @@ h1 {
     margin: 0 auto;
     text-align: center;
     line-height: 40px;
+    padding: 30px;
 }
+
+
 
 p {
     font-size: 18px;
     margin: 0 auto;
     max-width: 900px;
+    padding: 10px;
 } 
 
-.liontitle h1{
-        display: inline-block;
-        font-size: 80px;
-        line-height: 0.9;
-        padding: 20px;
-        font-family: 'Syncopate', sans-serif;
-        text-transform: uppercase;
-        background: radial-gradient(
-          circle farthest-corner at center center,
-          white,
-          #111
-        ) no-repeat;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        position: relative;
-        
+.wikilinks {
+    color: white;
+    text-align: center;
+    font-size: 30px;
 }
 
 
-
 .vid {
-   /* position: relative;
-    top: 34%;
-    left: 20%;
-    margin: 0 auto; 
-    position: absolute;
-    margin: auto;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
     width: 560px; 
     height: 315px; 
 
@@ -275,10 +292,12 @@ p {
 
 }
 
-/*
+
 @media only screen and (max-width: 480px) {
-    .liontitle {
-      width: 270px
+    article {
+      width: 300px;
+      left: 20px;
+      
     }
   }
   
@@ -293,4 +312,4 @@ p {
       background-image: url("../img/spaceship@2x.png");
     }
   }
-  } */
+  } 
