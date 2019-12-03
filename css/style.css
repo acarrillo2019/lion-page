@@ -22,6 +22,7 @@ body{
 
 .mainsection {
     overflow: hidden;
+    position: relative;
 }
 
 .context {
@@ -61,9 +62,7 @@ body{
  
 }
 
-.navcon {
-   
-}
+
 
 .navlinks a {
     color: #999;
@@ -86,6 +85,27 @@ body{
     opacity: .7;
 }
 
+
+h1, p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    opacity: .8;
+    text-shadow: black;
+}
+
+h1 {
+    font-size: 30px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 40px;
+}
+
+p {
+    font-size: 18px;
+    margin: 0 auto;
+    max-width: 900px;
+} 
+
 .liontitle h1{
         display: inline-block;
         font-size: 80px;
@@ -104,19 +124,33 @@ body{
         
 }
 
+
+
 .vid {
-    position: relative;
+   /* position: relative;
     top: 34%;
     left: 20%;
-    margin: 0 auto;
+    margin: 0 auto; 
+    position: absolute;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    width: 560px; 
+    height: 315px; 
+
+    position: absolute; 
+    top: 0; right: 0; 
+    bottom: 0; left: 0;
+    margin: auto;*/
 }
 
-.area{
+.area {
     
     background: -webkit-linear-gradient(to left, #5c390b, #ffb005);  
     width: 100%;
     height:100vh;
-
+    margin: 0 auto;
    
 }
 
@@ -235,3 +269,23 @@ body{
     }
 
 }
+
+/*
+@media only screen and (max-width: 480px) {
+    .liontitle {
+      width: 270px
+    }
+  }
+  
+  @media only screen and (min-width:320px) and (max-width:480px) {
+    .vid {
+      width: 200px
+    }
+    
+
+  @media only screen and (min-resolution: 150dpi) {
+    .logo {
+      background-image: url("../img/spaceship@2x.png");
+    }
+  }
+  } */
