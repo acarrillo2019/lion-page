@@ -20,13 +20,12 @@ html {
 
 body{
     font-family: 'Exo', sans-serif;
-    
-    overflow: auto;
+ /*   overflow: auto; */
+    background-color: transparent;
 }
 
 .mainsection {
-    overflow: auto;
-    
+ /*   overflow: auto;  */
 }
 
 .context {
@@ -55,7 +54,7 @@ body{
     max-width: 960px;
     margin: 0 auto;
     clear: both;
-
+    z-index: 99;
 }
 
 .navlinks {
@@ -123,7 +122,7 @@ article {
     top: 38%;
     position: absolute;
     margin-bottom: 70px;
-    
+    z-index: 20;
 }
 
 h1, p {
@@ -156,15 +155,32 @@ p {
     font-size: 30px;
 }
 
+.divpar {
+    position: sticky;
+    max-width: 900;
+    
+  padding: 15px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  top: 30%;
+  z-index: 10;
+}
 
 .vid {
-    width: 560px; 
-    height: 315px; 
+  /*  width: 560px; 
+    height: 315px; */ 
 
     position: absolute; 
     top: 0; right: 0; 
     bottom: 0; left: 0;
-    margin: auto;
+    margin: 0 auto; 
+    z-index: 11;
+    display: inline-block;
+}
+
+.embed-responsive {
+    
 }
 
 .area {
@@ -173,11 +189,12 @@ p {
     width: 100%;
     height:100vh;
     margin: 0 auto;
-   
+    
+    
 }
 
-.circles{
-    position: absolute;
+.circles {
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -292,7 +309,7 @@ p {
 
 }
 
-
+/*
 @media only screen and (max-width: 480px) {
     article {
       width: 300px;
@@ -312,4 +329,4 @@ p {
       background-image: url("../img/spaceship@2x.png");
     }
   }
-  } 
+  } */
